@@ -2,7 +2,7 @@
 import Footer from "../components/Footer";
 import { GiHamburgerMenu } from "react-icons/gi";
 import ankitimage from '../assets/ankit_image.jpg'
-import { Scrollbar } from "smooth-scrollbar-react";
+import ankit from '../assets/ankit-favicon.jpg'
 import toast from "react-hot-toast";
 
 // eslint-disable-next-line react/prop-types
@@ -32,7 +32,7 @@ function HomeLayout({children}){
                   <div className="flex-shrink-0 pt-0.5">
                     <img
                       className="h-10 w-10 rounded-full"
-                      src={ankitimage}
+                      src={ankit}
                       alt=""
                     />
                   </div>
@@ -60,12 +60,7 @@ function HomeLayout({children}){
 
     return(
         <div className="min-h-screen w-full relative">
-            <Scrollbar
-        plugins={{
-          overscroll: {
-            effect: 'bounce',
-          },
-        }}></Scrollbar>
+           
             <div className="drawer w-fit fixed left-0 top-0 z-10 overflow-hidden">
                 <input id="my-drawer" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content">
