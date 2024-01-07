@@ -5,7 +5,7 @@ function HomeSection(){
 
 
     return(
-        <div className="h-[80vh] md:h-[100vh] w-full flex items-center justify-center flex-col gap-12 lg:gap-14 text-center px-4 relative " style={{backgroundImage:`url(${homeimage})`}}>
+        <div className="h-[80vh] md:h-[100vh] w-full flex items-center justify-center flex-col gap-12 lg:gap-14 text-center px-4 relative" style={{backgroundImage:`url(${homeimage})`}}>
                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-wide">
                     <span><LiaPrayingHandsSolid/></span>
                     Namaskaram, I&apos;am <span className="text-yellow-500">Ankit Mishra</span>
