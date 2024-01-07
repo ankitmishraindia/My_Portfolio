@@ -2,13 +2,20 @@
 import Footer from "../components/Footer";
 import { GiHamburgerMenu } from "react-icons/gi";
 import ankitimage from '../assets/ankit_image.jpg'
+import { Scrollbar } from "smooth-scrollbar-react";
 
 // eslint-disable-next-line react/prop-types
 function HomeLayout({children}){
 
     return(
         <div className="min-h-screen w-full relative">
-            <div className="drawer w-fit absolute top-0 left-0 z-10 overflow-hidden">
+            <Scrollbar
+        plugins={{
+          overscroll: {
+            effect: 'bounce',
+          },
+        }}></Scrollbar>
+            <div className="drawer w-fit fixed left-0 top-0 z-10 overflow-hidden">
                 <input id="my-drawer" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content">
                     {/* Page content here */}
