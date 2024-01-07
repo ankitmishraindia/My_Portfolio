@@ -1,4 +1,5 @@
 
+
 function AboutSection(){
 
     return(
@@ -17,11 +18,23 @@ function AboutSection(){
                         </div>
                         <button className="px-7 lg:px-10 py-2 lg:py-3 font-bold bg-yellow-500 hover:bg-yellow-600 hover:text-white">CONTACT</button>
                     </div>
-                    <div className="w-[40%] hidden lg:block">
-                        <p>Locality:<span>Babhnan</span></p>
-                        <p>City:<span>Gonda</span></p>
-                        <p>District:<span>Gonda</span></p>
-                        <p>State:<span>Uttar Pradesh</span></p>
+                    <div className="w-[40%] hidden lg:block space-y-4 lg:space-y-7 h-full">
+                        <h3 className="text-2xl font-bold">Education & Trainings!</h3>
+                        <div className="space-y-3 lg:text-xl">
+                            <ul className="space-y-2" >
+                                <li type="square">Completed One year training Program by PWSkills.</li>
+                                <li type="square">Completed O Level from National Institute of Electronics and Information Technology.</li>
+                                <li type="square">Completed Graduation from Acharya Narendra Dev Kisan PG College.</li>
+                           </ul>
+                        </div>
+                        <h3 className="text-2xl font-bold">Hobbies!</h3>
+                        <ul className="space-y-2 lg:text-xl" >
+                                <li type="square">I absolutely love traveling and have a deep passion
+                                 for exploring new places, cultures, and experiences.</li>
+                                <li type="square">Solve real world problems and playing with team.</li>
+                                
+                           </ul>
+                        
                     </div>
             </div>
             
