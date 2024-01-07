@@ -7,7 +7,7 @@ import course_image from '../assets/meditation-course-image.jpg'
 function ProjectSection(){
 
     return (
-        <div id="projects" className=" w-full px-10 md:px-5 lg:px-16 py-7 lg:py-16 flex flex-col items-center gap-8 lg:gap-20 ">
+        <div id="projects" className=" w-full px-10 md:px-5 lg:px-16 py-7 lg:py-16 flex flex-col items-center gap-10 lg:gap-20 ">
             <div>
                 <h2 className="text-3xl text-center lg:text-4xl font-bold tracking-wide">PROJECTS</h2>
                 <div className="w-[100px] bg-yellow-500 h-2 rounded-xl mt-3 m-auto"></div>

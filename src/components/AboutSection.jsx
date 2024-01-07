@@ -6,7 +6,7 @@ function AboutSection(){
 
     
     return(
-        <div id="about" className="h-[70vh] lg:h-[120vh] w-full px-10 md:px-5 lg:px-16 py-4 lg:py-0 flex flex-col items-center justify-evenly lg:justify-around ">
+        <div id="about" className=" w-full px-10 md:px-5 lg:px-16 py-4 lg:py-20 flex flex-col items-center justify-evenly lg:justify-around ">
             <div>
                 <h2 className="text-3xl lg:text-4xl font-bold tracking-wide">ABOUT ME</h2>
                 <div className="w-[100px] bg-yellow-500 h-2 rounded-xl mt-3 m-auto"></div>

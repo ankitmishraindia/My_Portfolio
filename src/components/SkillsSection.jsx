@@ -7,7 +7,7 @@ function SkillsSection(){
 
 
     return(
-        <div id='skills' className="h-[60vh] md:h-[80vh] lg:h-[90vh] w-full flex items-center justify-around flex-col lg:gap-14 text-center px-4 relative " style={{backgroundImage:`url(${homeimage})`}}>
+        <div id='skills' className=" w-full flex items-center justify-around flex-col lg:gap-14 text-center px-4 py-5 md:py-9 relative " style={{backgroundImage:`url(${homeimage})`}}>
                    <div>
                         <h2 className="text-3xl md:text-4xl font-bold tracking-wide">MY SKILLS</h2>
                         <div className="w-[100px] bg-yellow-500 h-2 rounded-xl mt-3 m-auto"></div>
