@@ -7,6 +7,17 @@ import { Scrollbar } from "smooth-scrollbar-react";
 // eslint-disable-next-line react/prop-types
 function HomeLayout({children}){
 
+    //smooth scrolling
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      };
+
     return(
         <div className="min-h-screen w-full relative">
             <Scrollbar
@@ -33,11 +44,11 @@ function HomeLayout({children}){
                             <span>ANKIT MISHRA</span>
                         </div>
                         </li>
-                    <li className="mt-2"><a href="#home">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#skills">SKILLS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li className="mt-2"><a onClick={()=>scrollToSection('home')}>HOME</a></li>
+                    <li><a  onClick={()=>scrollToSection('about')}>ABOUT</a></li>
+                    <li><a onClick={()=>scrollToSection('projects')}>PROJECTS</a></li>
+                    <li><a onClick={()=>scrollToSection('skills')} >SKILLS</a></li>
+                    <li><a onClick={()=>scrollToSection('contact')}>CONTACT</a></li>
                     
                     </ul>
                 </div>

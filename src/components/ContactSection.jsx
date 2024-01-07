@@ -55,7 +55,7 @@ function ContactSection(){
             });
       
             if (response.ok) {
-              toast('Form submitted successfully!');
+              toast.success('Form submitted successfully!');
               // Optionally, reset the form
               setFormData({
                 fullName: '',
@@ -77,7 +77,7 @@ function ContactSection(){
                         <div className="w-[100px] bg-yellow-500 h-2 rounded-xl mt-3 m-auto"></div>
                         <p className='lg:text-xl mt-3 m-auto w-[80%]'>Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</p>
                    </div>
-                   <form onSubmit={onMail} className=' flex flex-col gap-3 md:ga w-[80%] md:w-[70%] bg-white rounded-lg p-5'>
+                   <form onSubmit={onMail} className=' flex flex-col gap-3 md:ga w-[80%] md:w-[70%] lg:w-[50%] bg-white rounded-lg p-8'>
                         <label className='text-left font-semibold' htmlFor="fullName">Name:</label>
                         <input 
                         required
