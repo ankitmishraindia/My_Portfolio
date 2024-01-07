@@ -4,7 +4,7 @@ import { FaHashnode } from "react-icons/fa6";
 function Footer(){
 
     return(
-        <div className="h-[40vh] w-full px-3 md:px-28 bg-black text-white">
+        <div className="h-[40vh] w-full px-3 md:px-28 bg-black text-white relative">
             <div className="h-[80%] flex flex-col md:flex-row-reverse md:items-center md:justify-between justify-evenly space-y-4">
                 <div className="space-y-3">
                     <h3 className="text-xl font-bold">SOCIAL</h3>
@@ -33,6 +33,7 @@ function Footer(){
                 <p className=" text-xs">© Copyright 2024. Made by
                  <a href="#"><span className="font-semibold text-sm underline">Ankit Mishra</span></a></p>
             </div>
+            <p className="absolute text-xs right-0 bottom-0"><a href="https://www.freepik.com/free-vector/white-background-with-triangle-patterns_4403214.htm#query=white%20pattern&position=7&from_view=keyword&track=ais&uuid=263a406c-b367-4dc3-8ef0-658661bf5b86">Image by starline</a> on Freepik</p>
         </div>
     )
 }

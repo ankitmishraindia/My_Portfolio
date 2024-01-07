@@ -63,7 +63,7 @@ function SkillsSection(){
                         </div>
                    </div>
 
-                   <p className="absolute text-xs right-0 bottom-0"><a href="https://www.freepik.com/free-vector/white-background-with-triangle-patterns_4403214.htm#query=white%20pattern&position=7&from_view=keyword&track=ais&uuid=263a406c-b367-4dc3-8ef0-658661bf5b86">Image by starline</a> on Freepik</p>
+                   
              </div>
     )
 
