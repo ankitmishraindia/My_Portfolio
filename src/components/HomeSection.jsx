@@ -1,6 +1,7 @@
 import { LiaPrayingHandsSolid } from "react-icons/lia";
 import homeimage from '../assets/home-bg.jpg'
 
+import { GiHeraldicSun, GiSunflower } from "react-icons/gi";
 function HomeSection(){
 
     //smooth scrolling
@@ -15,9 +16,10 @@ function HomeSection(){
   };
 
     return(
-        <div id="home" className="h-[60vh] md:h-[80vh] lg:h-screen w-full flex items-center justify-center flex-col gap-12 lg:gap-14 text-center px-4 relative" style={{backgroundImage:`url(${homeimage})`}}>
+        <div id="home" className="h-[60vh] md:h-[80vh] lg:h-screen w-full flex items-center justify-center flex-col gap-12 lg:gap-14 text-center px-7 relative" style={{backgroundImage:`url(${homeimage})`}}>
+                    <div className="animate-[bounce_7s_infinite] "><GiHeraldicSun className="text-yellow-500  animate-[spin_15s_infinite]" size={66}/></div>
                    <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-wide">
-                    <span><LiaPrayingHandsSolid/></span>
+                    <div><LiaPrayingHandsSolid/></div>
                     Namaskaram, I&apos;am <span className="text-yellow-500">Ankit Mishra</span>
                     </h1>
                    <p className="w-[70%] lg:text-xl">A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product.</p>
