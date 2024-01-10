@@ -25,15 +25,14 @@ function Footer(){
                 </div>
                 <div className="space-y-3 md:w-[40%]">
                    <h3 className="text-xl font-bold">ANKIT MISHRA</h3>
-                   <p className="text-sm">A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product</p>
+                   <p className="text-sm">A Frontend & Backend focused Web Developer building the Frontend & Backend of Websites and Web Applications that leads to the success of the overall product</p>
                 </div>
                 
             </div>
             <div className="h-[20%]  border-t-[1px] border-t-gray-500 flex items-center justify-center">
-                <p className=" text-xs">© Copyright 2024. Made by
-                 <a href="#"><span className="font-semibold text-sm underline">Ankit Mishra</span></a></p>
+                <p className=" text-xs">© Copyright 2024. Made by <a href="#"><span className="font-semibold text-sm underline">Ankit Mishra</span></a></p>
             </div>
-            <p className="absolute text-xs right-0 bottom-0"><a href="https://www.freepik.com/free-vector/white-background-with-triangle-patterns_4403214.htm#query=white%20pattern&position=7&from_view=keyword&track=ais&uuid=263a406c-b367-4dc3-8ef0-658661bf5b86">Image by starline</a> on Freepik</p>
+            <p className="absolute text-[10px] right-0 bottom-0"><a href="https://www.freepik.com/free-vector/white-background-with-triangle-patterns_4403214.htm#query=white%20pattern&position=7&from_view=keyword&track=ais&uuid=263a406c-b367-4dc3-8ef0-658661bf5b86">Image by starline</a> on Freepik</p>
         </div>
     )
 }

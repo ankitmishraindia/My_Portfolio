@@ -3,6 +3,8 @@ import youtube_clone from '../assets/youtube-clone.jpeg';
 import blog_image from '../assets/blog-image.jpg';
 import lms_image from '../assets/Lms.jpg'
 import course_image from '../assets/meditation-course-image.jpg'
+import todoApp from '../assets/todoApp-image.jpg'
+
 
 function ProjectSection(){
 
@@ -11,7 +13,7 @@ function ProjectSection(){
             <div>
                 <h2 className="text-3xl text-center lg:text-4xl font-bold tracking-wide">PROJECTS</h2>
                 <div className="w-[100px] bg-yellow-500 h-2 rounded-xl mt-3 m-auto"></div>
-                <p className="text-center md:w-[70%] lg:text-xl m-auto mt-2">Here you will find some of the personal and clients projects that I created with each project containing its own case study</p>
+                <p className="text-center md:w-[70%] lg:text-xl m-auto mt-2">Here you will find some of the personal and clients projects that I created with each project containing its own case study.</p>
             </div>
             
             <div className="text-center space-y-7 md:flex gap-4 lg:gap-8 items-center">
@@ -27,6 +29,23 @@ function ProjectSection(){
                              <button className="px-7  lg:px-10 py-2 lg:py-3 font-bold bg-yellow-500 hover:bg-yellow-600 hover:text-gray-300">Live</button>
                         </a>
                         <a href="https://github.com/ankitmishraindia/Github-Avatar_Finder">
+                            <button className="px-7  lg:px-10 py-2 lg:py-3 font-bold bg-yellow-500 hover:bg-yellow-600 hover:text-gray-300">Code</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="text-center space-y-7 md:flex gap-4 lg:gap-8 items-center">
+                <div className='border-8 border-yellow-500 rounded-xl md:w-1/2 shadow-[20px_20px_10px_rgba(0,0,0,0.8)]'>
+                    <img className='w-full h-full rounded-lg' src={todoApp} alt="todoApp" />
+                </div>
+                <div className='space-y-5 lg:space-y-8 md:w-1/2'>
+                    <h3 className='text-2xl lg:text-3xl font-bold'>Dockerized Todo App</h3>
+                    <p className='lg:text-xl'>Todo App with Frontend & Backend Contanerized in Docker for todo task operations.</p>
+                    <p className='lg:text-xl'>Tech: <span className='font-semibold'>DOCKER, NODEJS, EXPRESSJS, MONGODB ATLAS, REACTJS</span></p>
+                    <div className='space-x-3'>
+                         
+                        <a href="https://github.com/ankitmishraindia/todo-fullStack-w3dev">
                             <button className="px-7  lg:px-10 py-2 lg:py-3 font-bold bg-yellow-500 hover:bg-yellow-600 hover:text-gray-300">Code</button>
                         </a>
                     </div>

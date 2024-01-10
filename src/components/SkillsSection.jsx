@@ -1,13 +1,13 @@
 import homeimage from '../assets/home-bg.jpg'
 import { FaHtml5 } from "react-icons/fa";
-import { SiTailwindcss,SiReact,SiNextdotjs,SiNodedotjs, SiFirebase, SiVercel, SiExpress, SiMongodb, SiGit, SiDocker, SiHashnode } from "react-icons/si";
+import { SiTailwindcss,SiReact,SiNextdotjs,SiNodedotjs, SiFirebase, SiVercel, SiExpress, SiMongodb, SiGit, SiDocker, SiHashnode, SiRedux, SiJavascript, SiMysql } from "react-icons/si";
 
 
 function SkillsSection(){
 
 
     return(
-        <div id='skills' className=" w-full flex items-center justify-around flex-col lg:gap-14 text-center px-4 py-5 md:py-9 relative " style={{backgroundImage:`url(${homeimage})`}}>
+        <div id='skills' className=" w-full flex items-center justify-around flex-col lg:gap-14 text-center px-4 py-7 md:py-9 relative " style={{backgroundImage:`url(${homeimage})`}}>
                    <div>
                         <h2 className="text-3xl md:text-4xl font-bold tracking-wide">MY SKILLS</h2>
                         <div className="w-[100px] bg-yellow-500 h-2 rounded-xl mt-3 m-auto"></div>
@@ -60,6 +60,18 @@ function SkillsSection(){
                         <div className='flex items-center gap-3'>
                             <SiHashnode size={33} className='text-yellow-500'/>
                             <span className='font-bold'>Hashnode</span>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <SiRedux size={33} className='text-yellow-500'/>
+                            <span className='font-bold'>Redux</span>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <SiJavascript size={33} className='text-yellow-500'/>
+                            <span className='font-bold'>Javascript</span>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <SiMysql size={33} className='text-yellow-500'/>
+                            <span className='font-bold'>MySQL</span>
                         </div>
                    </div>
 
