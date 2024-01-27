@@ -1,6 +1,6 @@
 import homeimage from '../assets/home-bg.jpg'
 import { FaHtml5 } from "react-icons/fa";
-import { SiTailwindcss,SiReact,SiNextdotjs,SiNodedotjs, SiFirebase, SiVercel, SiExpress, SiMongodb, SiGit, SiDocker, SiHashnode, SiRedux, SiJavascript, SiMysql } from "react-icons/si";
+import { SiTailwindcss,SiReact,SiNextdotjs,SiNodedotjs, SiFirebase, SiVercel, SiExpress, SiMongodb, SiGit, SiDocker, SiHashnode, SiRedux, SiJavascript, SiMysql, SiTypescript } from "react-icons/si";
 
 
 function SkillsSection(){
@@ -72,6 +72,10 @@ function SkillsSection(){
                         <div className='flex items-center gap-3'>
                             <SiMysql size={33} className='text-yellow-500'/>
                             <span className='font-bold'>MySQL</span>
+                        </div>
+                        <div className='flex items-center gap-3'>
+                            <SiTypescript size={33} className='text-yellow-500'/>
+                            <span className='font-bold'>TypeScript</span>
                         </div>
                    </div>
 

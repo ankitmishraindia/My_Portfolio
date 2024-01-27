@@ -61,7 +61,7 @@ function HomeLayout({children}){
 
     return(
         <div className="min-h-screen w-full relative">
-             <div className="animate-[bounce_7s_infinite] absolute top-10 z-20  border-gray-500 w-full flex justify-center "><GiHeraldicSun className="text-yellow-500  animate-[spin_15s_infinite]" size={66}/></div>
+             <div className="animate-[bounce_7s_infinite] absolute top-10 z-10  border-gray-500 w-full flex justify-center "><GiHeraldicSun className="text-yellow-500 text-4xl md:text-6xl lg:text-9xl  animate-[spin_15s_infinite]" /></div>
             <div className="drawer w-fit fixed left-0 top-0 z-10 overflow-hidden">
                 <input id="my-drawer" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content">
