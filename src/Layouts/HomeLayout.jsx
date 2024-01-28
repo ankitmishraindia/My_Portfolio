@@ -5,6 +5,12 @@ import ankitimage from '../assets/ankit_image.jpg'
 import ankit from '../assets/ankit-favicon.jpg'
 import toast from "react-hot-toast";
 import { GiHeraldicSun } from "react-icons/gi";
+import { ImProfile } from "react-icons/im";
+import { FaHome } from "react-icons/fa";
+import { BsFillInfoCircleFill } from "react-icons/bs";
+import { PiToolboxDuotone } from "react-icons/pi";
+import { GoGoal } from "react-icons/go";
+import { MdPermPhoneMsg } from "react-icons/md";
 
 // eslint-disable-next-line react/prop-types
 function HomeLayout({children}){
@@ -42,7 +48,7 @@ function HomeLayout({children}){
                       Ankit Mishra
                     </p>
                     <p className="mt-1 text-sm text-gray-500">
-                      Namskaram! I am a web developer!
+                      Namskaram! I am a Full stack web developer!
                     </p>
                   </div>
                 </div>
@@ -83,11 +89,16 @@ function HomeLayout({children}){
                             
                         </div>
                         </li>
-                    <li className="mt-2"><a onClick={()=>scrollToSection('home')}>HOME</a></li>
-                    <li><a  onClick={()=>scrollToSection('about')}>ABOUT</a></li>
-                    <li><a onClick={()=>scrollToSection('projects')}>PROJECTS</a></li>
-                    <li><a onClick={()=>scrollToSection('skills')} >SKILLS</a></li>
-                    <li><a onClick={()=>scrollToSection('contact')}>CONTACT</a></li>
+                    <li className="mt-2"><a onClick={()=>scrollToSection('home')}>HOME<FaHome/></a></li>
+                    <li><a  onClick={()=>scrollToSection('about')}>ABOUT<BsFillInfoCircleFill/></a></li>
+                    <li><a onClick={()=>scrollToSection('projects')}>PROJECTS<PiToolboxDuotone/></a></li>
+                    <li><a onClick={()=>scrollToSection('skills')} >SKILLS<GoGoal/></a></li>
+                    <li><a onClick={()=>scrollToSection('contact')}>CONTACT<MdPermPhoneMsg/></a></li>
+                    <li>
+                      <a href="https://drive.google.com/file/d/1t9rJEcp7oLOizvis4hgtocXWlMXxLaGx/view?usp=sharing">RESUME
+                      <ImProfile/></a>
+                      
+                      </li>
                     
                     </ul>
                 </div>

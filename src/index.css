@@ -4,4 +4,8 @@
 
 button{
     box-shadow: 0 0 5px #646405;
+    
+}
+button:hover{
+    transform: scale(1.1)
 }
