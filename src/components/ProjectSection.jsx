@@ -6,6 +6,7 @@ import course_image from '../assets/meditation-course-image.jpg'
 import chatbot from '../assets/chatbot.jpg'
 import todoApp from '../assets/todoApp-image.jpg'
 import portfolio from '../assets/portfolio.jpg'
+import bookmovie from '../assets/bookmovie.jpg'
 
 
 function ProjectSection(){
@@ -27,7 +28,9 @@ function ProjectSection(){
                     <p className='lg:text-xl'>Make live chat with AI through openAPI and save/delete your chat for future use.</p>
                     <p className='lg:text-xl'>Tech: <span className='font-semibold'>REACTJS, EXPRESSJS, API, JAVASCRIT, MONGODB ATLAS</span></p>
                     <div className='space-x-3'>
-                         
+                        <a href="https://chatbot-frontend-lake.vercel.app/">
+                             <button className="px-7  lg:px-10 py-2 lg:py-3 font-bold bg-yellow-500 hover:bg-yellow-600 hover:text-gray-300">Live</button>
+                        </a>
                         <a href="https://github.com/ankitmishraindia/Chatbot">
                             <button className="px-7  lg:px-10 py-2 lg:py-3 font-bold bg-yellow-500 hover:bg-yellow-600 hover:text-gray-300">Code</button>
                         </a>
@@ -65,6 +68,26 @@ function ProjectSection(){
                     <div className='space-x-3'>
                          
                         <a href="https://github.com/ankitmishraindia/todo-fullStack-w3dev">
+                            <button className="px-7  lg:px-10 py-2 lg:py-3 font-bold bg-yellow-500 hover:bg-yellow-600 hover:text-gray-300">Code</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="text-center space-y-7 md:flex gap-4 lg:gap-8 items-center">
+                <div className='border-8 border-yellow-500 rounded-xl md:w-1/2 shadow-[20px_20px_10px_rgba(0,0,0,0.8)]'>
+                    <img className='w-full h-full rounded-lg' src={todoApp} alt="todoApp" />
+                </div>
+                <div className='space-y-5 lg:space-y-8 md:w-1/2'>
+                    <h3 className='text-2xl lg:text-3xl font-bold'>Movie Summary</h3>
+                    <p className='lg:text-xl'>A preview of some movies with summary and booking process</p>
+                    <p className='lg:text-xl'>Tech: <span className='font-semibold'>TAILWINDCSS,REACT-ROUTER-DOM, REACTJS</span></p>
+                    <div className='space-x-3'>
+                         
+                        <a href="https://book-movie-show.vercel.app/">
+                            <button className="px-7  lg:px-10 py-2 lg:py-3 font-bold bg-yellow-500 hover:bg-yellow-600 hover:text-gray-300">Live</button>
+                        </a>
+                        <a href="https://github.com/ankitmishraindia/BooK-Movie-Show">
                             <button className="px-7  lg:px-10 py-2 lg:py-3 font-bold bg-yellow-500 hover:bg-yellow-600 hover:text-gray-300">Code</button>
                         </a>
                     </div>
