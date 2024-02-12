@@ -1,9 +1,9 @@
 import HomeLayout from "../Layouts/HomeLayout";
-import AboutSection from "../components/AboutSection";
-import ContactSection from "../components/ContactSection";
-import HomeSection from "../components/HomeSection";
-import ProjectSection from "../components/ProjectSection";
-import SkillsSection from "../components/SkillsSection";
+import AboutSection from "../Sections/AboutSection";
+import ContactSection from "../Sections/ContactSection";
+import HomeSection from "../Sections/HomeSection";
+import ProjectSection from "../Sections/ProjectSection";
+import SkillsSection from "../Sections/SkillsSection";
 
 
 function HomePage(){

@@ -1,5 +1,5 @@
 
-import Footer from "../components/Footer";
+import Footer from "../Sections/Footer";
 import { GiHamburgerMenu } from "react-icons/gi";
 import ankitimage from '../assets/ankit_image.jpg'
 import ankit from '../assets/ankit-favicon.jpg'
