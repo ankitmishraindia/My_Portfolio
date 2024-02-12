@@ -1,4 +1,4 @@
-import homeimage from '../assets/home-bg.jpg'
+import homeimage from '../assets/contact_image.avif'
 import { useState } from "react";
 import toast from "react-hot-toast";
 

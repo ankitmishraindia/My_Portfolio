@@ -1,5 +1,6 @@
 import { LiaPrayingHandsSolid } from "react-icons/lia";
-import homeimage from '../assets/home-bg.jpg'
+import homeimage from '../assets/webdev.jpg'
+
 
 
 function HomeSection(){

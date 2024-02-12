@@ -1,4 +1,4 @@
-import homeimage from '../assets/home-bg.jpg'
+import homeimage from '../assets/skill_image2.avif'
 import { FaHtml5 } from "react-icons/fa";
 import { SiTailwindcss,SiReact,SiNextdotjs,SiNodedotjs, SiFirebase, SiVercel, SiExpress, SiMongodb, SiGit, SiDocker, SiHashnode, SiRedux, SiJavascript, SiMysql, SiTypescript } from "react-icons/si";
 
