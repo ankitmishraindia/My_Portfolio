@@ -1,4 +1,4 @@
-import homeimage from '../assets/contact_image.avif'
+import homeimage from '../assets/contact_image.jpg'
 import { useState } from "react";
 import toast from "react-hot-toast";
 
@@ -71,7 +71,7 @@ function ContactSection(){
       }
 
     return(
-        <div id='contact' className=" w-full flex items-center flex-col gap-4 lg:gap-14 text-center px-4 py-8 relative " style={{backgroundImage:`url(${homeimage})`}}>
+        <div id='contact' className=" w-full flex items-center flex-col gap-4 lg:gap-14 text-center px-4 py-8 relative bg-cover " style={{backgroundImage:`url(${homeimage})`}}>
                    <div>
                         <h2 className="text-3xl md:text-4xl font-bold tracking-wide">CONTACT</h2>
                         <div className="w-[100px] bg-yellow-500 h-2 rounded-xl mt-3 m-auto"></div>

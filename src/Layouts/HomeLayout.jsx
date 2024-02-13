@@ -83,7 +83,7 @@ function HomeLayout({children}){
                     <li>
                         <div className="flex flex-col border-2 rounded-2xl border-white text-gray-400">
                             <a onClick={()=>hellomessage()}>
-                                <img className="h-[150px] w-[100px] md:w-[200px] md:h-[250px] border-white border  rounded-3xl" src={ankitimage} alt="ankit-image" />
+                                <img className="h-[150px] w-[100px] md:w-[200px] md:h-[250px] border-yellow-500 border-4  rounded-3xl" src={ankitimage} alt="ankit-image" />
                             <span>ANKIT MISHRA</span>
                             </a>
                             

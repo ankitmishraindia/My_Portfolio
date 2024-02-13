@@ -42,8 +42,8 @@ function AboutSection(){
                         <h3 className="text-2xl font-bold">Education & Trainings!</h3>
                         <div className="space-y-3 lg:text-xl">
                             <ul className="space-y-2" >
-                                <li type="square">Completed One year training Program by PWSkills.</li>
-                                <li type="square">Completed O Level from National Institute of Electronics and Information Technology.</li>
+                                <li type="square">Completed One year training Program by <em>PWSkills</em>.</li>
+                                <li type="square">Completed <b>IT Computer Diploma</b> O&apos; Level from National Institute of Electronics and Information Technology.</li>
                                 <li type="square">Completed Graduation from Acharya Narendra Dev Kisan PG College.</li>
                            </ul>
                         </div>
