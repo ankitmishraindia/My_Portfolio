@@ -1,8 +1,10 @@
 import homeimage from '../assets/contact_image.jpg'
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
 
 function ContactSection(){
+
 
 
     const [formData,setFormData]=useState({
@@ -70,6 +72,17 @@ function ContactSection(){
           }
       }
 
+      //smooth scrolling
+        const scrollToSection = (id) => {
+          const element = document.getElementById(id);
+          if (element) {
+            element.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+            });
+          }
+        };
+
     return(
         <div id='contact' className=" w-full flex items-center flex-col gap-4 lg:gap-14 text-center px-4 py-8 relative bg-cover " style={{backgroundImage:`url(${homeimage})`}}>
                    <div>
@@ -116,6 +129,10 @@ function ContactSection(){
 
                         <button className="px-7  lg:px-10 py-2 lg:py-3 font-bold bg-yellow-500 hover:bg-yellow-600 hover:text-gray-300">Send</button>
                    </form>
+                   
+                   <a onClick={()=>scrollToSection('home')} className='absolute bottom-2 right-5 cursor-pointer bg-yellow-500 text-white'>
+                      <MdOutlineKeyboardDoubleArrowUp size={44}/>
+                   </a>
         </div>
     )
 }

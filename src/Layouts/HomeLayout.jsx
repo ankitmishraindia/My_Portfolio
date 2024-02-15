@@ -89,8 +89,8 @@ function HomeLayout({children}){
                             
                         </div>
                         </li>
-                    <li className="mt-2"><a onClick={()=>scrollToSection('home')}>HOME<FaHome/></a></li>
-                    <li><a  onClick={()=>scrollToSection('about')}>ABOUT<BsFillInfoCircleFill/></a></li>
+                    <li className="mt-2"><a  onClick={()=>scrollToSection('home')}>HOME<FaHome/></a></li>
+                    <li><a onClick={()=>scrollToSection('about')}>ABOUT<BsFillInfoCircleFill/></a></li>
                     <li><a onClick={()=>scrollToSection('projects')}>PROJECTS<PiToolboxDuotone/></a></li>
                     <li><a onClick={()=>scrollToSection('skills')} >SKILLS<GoGoal/></a></li>
                     <li><a onClick={()=>scrollToSection('contact')}>CONTACT<MdPermPhoneMsg/></a></li>
