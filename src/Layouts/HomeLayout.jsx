@@ -76,7 +76,7 @@ function HomeLayout({children}){
                 <div className="drawer-content">
                     {/* Page content here */}
                     <label htmlFor="my-drawer">
-                       <GiHamburgerMenu size={33} className="m-1 md:m-4 cursor-pointer hover:text-gray-600"/>
+                       <GiHamburgerMenu size={33} className="m-1 md:m-4 cursor-pointer text-red-600 hover:text-red-500"/>
                     </label>
                 </div> 
                 <div className="drawer-side ">
