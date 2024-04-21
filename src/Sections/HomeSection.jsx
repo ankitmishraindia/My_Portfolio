@@ -19,8 +19,8 @@ function HomeSection(){
   };
 
     return(
-        <div id="home" className="h-[60vh] md:h-[80vh] lg:h-screen w-full flex items-center justify-center relative" style={{backgroundImage: `url(${homeimage})`}}>
-                    <div className="flex flex-col items-center justify-center gap-12 lg:gap-14 text-center ">
+        <div id="home" className="h-[60vh] md:h-[80vh] lg:h-screen w-full flex items-center justify-center relative " style={{backgroundImage: `url(${homeimage})`}}>
+                    <div className="flex flex-col items-center justify-center gap-4 md:gap-10 lg:gap-14 text-center ">
                           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-wide">
                             <div><LiaPrayingHandsSolid/></div>
                             Namaskaram, I&apos;am <span className="text-yellow-500">Ankit Mishra</span>
@@ -31,7 +31,7 @@ function HomeSection(){
                         </a>
                     </div>
                   
-                   {/* <SolarSystem/> */}
+                  
                    
              </div>
     )
