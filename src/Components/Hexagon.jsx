@@ -46,14 +46,14 @@ function hellomessage(){
 
 
     return(
-        <div className='flex justify-content-center'>
+        <div className='flex flex-col items-center md:items-start gap-2'>
           
             <a onClick={()=>hellomessage()} className='w-[250px] img cursor-pointer'>
                                   <img className="h-full w-full" src={ankitimage} alt="ankit-image" />
                               
-                              </a>
+            </a>
          
-          
+            <p className="w-[250px] lg:text-sm text-justify">A focused Full stack Web Developer building the Frontend & Backend of Websites and Web Applications that leads to the success of the overall product.</p>
         </div>
     )
 }
