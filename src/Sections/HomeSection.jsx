@@ -1,5 +1,5 @@
-import { LiaPrayingHandsSolid } from "react-icons/lia";
-import homeimage from '../assets/webdev.jpg'
+
+
 import CanvasHome from "../Components/CanvasHome";
 
 // import SolarSystem from "../Components/SolarSystem";
@@ -20,10 +20,10 @@ function HomeSection(){
   };
 
     return(
-        <div id="home" className="h-screen w-full flex items-center justify-center relative " style={{backgroundImage: `url(${homeimage})`}}>
-                    <div className="flex flex-col items-center justify-center gap-4 md:gap-10 lg:gap-14 text-center ">
-                          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-wide flex flex-col items-center lg:items-stretch">
-                            <LiaPrayingHandsSolid className="animate-pulse text-red-500"/>
+        <div id="home" className="h-screen w-full flex items-center justify-center relative ">
+                    <div className="flex flex-col items-center justify-center gap-4 md:gap-10 lg:gap-14 text-center z-10">
+                          <h1 className="text-4xl md:text-6xl lg:text-7xl text-white bg-transparent font-bold tracking-wide flex flex-col items-center lg:items-stretch">
+                            
                             <p>Namaskaram, I&apos;am <span className="text-yellow-500">Ankit Mishra</span></p>
                             
                           </h1>
