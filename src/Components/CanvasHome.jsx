@@ -31,12 +31,12 @@ useEffect(()=>{
             this.x=Math.random() * canvas.width;
             this.y=Math.random() * canvas.height;
             this.size=Math.random()*15 +1;
-            this.baseSpeedX=(Math.random() *3 -2.5)*0.5;
-            this.baseSpeedY=(Math.random() *3 -2.5)*0.5;
+            this.baseSpeedX=(Math.random() *3 -2.5)*0.1;
+            this.baseSpeedY=(Math.random() *3 -2.5)*0.1;
             this.speedX=this.baseSpeedX;
             this.speedY=this.baseSpeedY;
             this.color=`rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`;
-            this.opacity=0.6
+            this.opacity=''
         }
         update(){
            this.x +=this.speedX;
@@ -60,12 +60,12 @@ useEffect(()=>{
             if(distance<100){
                this.opacity=1;
             }else{
-              this.opacity=0.6
+              this.opacity=0.5
             }
            ctx.fillStyle=this.color;
            ctx.globalAlpha=this.opacity;
            ctx.beginPath();
-            ctx.arc(this.x,this.y,this.size,0,Math.PI*2)
+            ctx.arc(this.x,this.y,this.size,3,Math.PI*2)
            ctx.fill();
         }
         
