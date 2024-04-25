@@ -26,8 +26,10 @@ useEffect(()=>{
             this.x=Math.random() * canvas.width;
             this.y=Math.random() * canvas.height;
             this.size=Math.random()*15 +1;
-            this.speedX=Math.random() *3 -1.5;
-            this.speedY=Math.random() *3 -1.5;
+            this.speedX=(Math.random() *3 -2.5)*0.5;
+            this.speedY=(Math.random() *3 -2.5)*0.2;
+            this.color=`rgba(${Math.random()*255},${Math.random()*255},${Math.random()*255},0.8)`
+           
         }
         update(){
            this.x +=this.speedX;
@@ -41,12 +43,13 @@ useEffect(()=>{
            }
         }
         draw(){
-            
-            ctx.fillStyle='green'
-           ctx.lineWidth='3px'
+           
+           ctx.fillStyle=this.color;
            ctx.beginPath();
             ctx.arc(this.x,this.y,this.size,0,Math.PI*2)
            ctx.fill()
+
+        
         }
     }
 
@@ -63,7 +66,7 @@ useEffect(()=>{
             particlesArray[i].update();
             particlesArray[i].draw();
             // remove very small particles
-            if(particlesArray[i].size<=0.3){
+            if(particlesArray[i].size<=0.7){
                 particlesArray.splice(i,1)
                 console.log(particlesArray.length)
                 i--;
