@@ -60,19 +60,24 @@ useEffect(()=>{
             if(distance<100){
                this.opacity=1;
             }else{
-              this.opacity=0.5
+              this.opacity=0.4
             }
            ctx.fillStyle=this.color;
+           ctx.strokeStyle='white';
+           ctx.lineWidht='5px';
            ctx.globalAlpha=this.opacity;
            ctx.beginPath();
             ctx.arc(this.x,this.y,this.size,3,Math.PI*2)
+          
+           
            ctx.fill();
+           ctx.stroke()
         }
         
     }
 
     function init(){
-          for(let i=0;i<200;i++){
+          for(let i=0;i<100;i++){
             particlesArray.push(new Particle())
           }
     }
