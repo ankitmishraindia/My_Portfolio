@@ -16,17 +16,15 @@ useEffect(()=>{
     canvas.height=window.innerHeight;
     })
     
-    const mouse={
-        x:undefined,
-        y:undefined
-    }
+    // const mouse={
+    //     x:undefined,
+    //     y:undefined
+    // }
 
     class Particle{
         constructor(){
-            // this.x=Math.random() * canvas.width;
-            // this.y=Math.random() * canvas.height;
-            this.x=mouse.x;
-            this.y=mouse.y;
+            this.x=Math.random() * canvas.width;
+            this.y=Math.random() * canvas.height;
             this.size=Math.random()*15 +1;
             this.speedX=Math.random() *3 -1.5;
             this.speedY=Math.random() *3 -1.5;
@@ -34,7 +32,13 @@ useEffect(()=>{
         update(){
            this.x +=this.speedX;
            this.y +=this.speedY;
-           if(this.size>0.2) this.size -=0.1;
+           //check boundry collision
+           if(this.x+this.size>canvas.width||this.x - this.size < 0){
+            this.speedX=-this.speedX;
+           }
+           if(this.y + this.size >canvas.height || this.y - this.size <0){
+            this.speedY=-this.speedY;
+           }
         }
         draw(){
             
@@ -67,16 +71,6 @@ useEffect(()=>{
             }
         }
     }
-
-   
-    //click event
-    canvas.addEventListener('mousemove',function(event){
-        mouse.x=event.x;
-        mouse.y=event.y;
-        for(let i=0;i<10;i++){
-            particlesArray.push(new Particle())
-        }
-    })
      
     //animation
     function animate(){
