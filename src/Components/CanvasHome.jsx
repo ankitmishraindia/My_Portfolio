@@ -16,20 +16,27 @@ useEffect(()=>{
     canvas.height=window.innerHeight;
     })
     
-    // const mouse={
-    //     x:undefined,
-    //     y:undefined
-    // }
+    const mouse={
+        x:undefined,
+        y:undefined
+    }
+
+    canvas.addEventListener('mousemove',function(event){
+        mouse.x=event.x;
+        mouse.y=event.y;
+    })
 
     class Particle{
         constructor(){
             this.x=Math.random() * canvas.width;
             this.y=Math.random() * canvas.height;
             this.size=Math.random()*15 +1;
-            this.speedX=(Math.random() *3 -2.5)*0.5;
-            this.speedY=(Math.random() *3 -2.5)*0.2;
-            this.color=`rgba(${Math.random()*255},${Math.random()*255},${Math.random()*255},0.8)`
-           
+            this.baseSpeedX=(Math.random() *3 -2.5)*0.5;
+            this.baseSpeedY=(Math.random() *3 -2.5)*0.5;
+            this.speedX=this.baseSpeedX;
+            this.speedY=this.baseSpeedY;
+            this.color=`rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`;
+            this.opacity=0.6
         }
         update(){
            this.x +=this.speedX;
@@ -41,20 +48,31 @@ useEffect(()=>{
            if(this.y + this.size >canvas.height || this.y - this.size <0){
             this.speedY=-this.speedY;
            }
-        }
-        draw(){
+          
            
+    }
+        draw(){
+            //change opacity during hover
+            
+            const differnceX=mouse.x-this.x;
+            const differnceY=mouse.y-this.y;
+            const distance=Math.sqrt(differnceX**2+differnceY**2)
+            if(distance<100){
+               this.opacity=1;
+            }else{
+              this.opacity=0.6
+            }
            ctx.fillStyle=this.color;
+           ctx.globalAlpha=this.opacity;
            ctx.beginPath();
             ctx.arc(this.x,this.y,this.size,0,Math.PI*2)
-           ctx.fill()
-
-        
+           ctx.fill();
         }
+        
     }
 
     function init(){
-          for(let i=0;i<100;i++){
+          for(let i=0;i<200;i++){
             particlesArray.push(new Particle())
           }
     }
@@ -65,6 +83,7 @@ useEffect(()=>{
         for(let i=0;i<particlesArray.length;i++){
             particlesArray[i].update();
             particlesArray[i].draw();
+            
             // remove very small particles
             if(particlesArray[i].size<=0.7){
                 particlesArray.splice(i,1)
